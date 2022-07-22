@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:animate_do/animate_do.dart';
 import 'package:e_commerce_shop_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
@@ -24,6 +25,20 @@ class ProductDetailPage extends StatefulWidget {
 }
 
 class _ProductDetailPageState extends State<ProductDetailPage> {
+  final sizes = <double>[
+    6,
+    6.5,
+    7,
+    7.5,
+    8,
+    8.5,
+    9,
+    9.5,
+    10,
+    10.5,
+    11,
+    11.5,
+  ];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -106,7 +121,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               )
             ],
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -154,6 +169,131 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                 ),
               )
+            ],
+          ),
+          const SizedBox(height: 20),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              FadeIn(
+                child: SizedBox(
+                  width: size.width * .25,
+                  child: Column(
+                    children: List.generate(
+                      widget.colors.length,
+                      (index) => SizedBox(
+                        height: 70,
+                        width: 70,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 10,
+                              child: Container(
+                                height: 60,
+                                width: 60,
+                                decoration: BoxDecoration(
+                                  color: white,
+                                  borderRadius: BorderRadius.circular(8),
+                                  border: Border.all(
+                                    color: secondary.withOpacity(.1),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 60,
+                              width: 60,
+                              child: Image.asset(
+                                widget.colors[index],
+                                fit: BoxFit.cover,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: SizedBox(
+                  height: 350,
+                  child: Stack(
+                    children: [
+                      Positioned.fill(
+                        top: 30,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: secondary.withOpacity(.12),
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(120),
+                              topRight: Radius.circular(40),
+                              bottomRight: Radius.circular(120),
+                              bottomLeft: Radius.circular(40),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 10,
+                        child: SizedBox(
+                          height: 280,
+                          child: Image.asset(
+                            widget.img,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              Text(
+                'Sizes',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(width: 15),
+              Expanded(
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: List.generate(
+                      sizes.length,
+                      (index) => Padding(
+                        padding: const EdgeInsets.only(right: 10),
+                        child: Container(
+                          height: 45,
+                          width: 45,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(
+                              color: secondary.withOpacity(.2),
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              sizes[index].toString(),
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ],
