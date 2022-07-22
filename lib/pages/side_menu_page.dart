@@ -144,12 +144,12 @@ class _SideMenuPageState extends State<SideMenuPage> {
                 ),
                 onTap: () {
                   Navigator.pop(context);
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => sideMenuItems[index]['page'],
-                      ),
-                      (route) => false);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => sideMenuItems[index]['page'],
+                    ),
+                  );
                 },
               ),
             ),
