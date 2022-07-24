@@ -224,7 +224,7 @@ class _HomePageState extends State<HomePage> {
                 );
               },
               child: FadeIn(
-                duration: Duration(milliseconds: index * 1000),
+                duration: Duration(milliseconds: (index + 1) * 1000),
                 child: SizedBox(
                   width: (size.width - 50) / 2,
                   height: 220,
