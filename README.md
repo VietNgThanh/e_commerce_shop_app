@@ -1,16 +1,14 @@
-# e_commerce_shop_app
+# e_commerce_shop_app_ui
 
-A new Flutter project.
+A Flutter project to self-enhance UI skills.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="left">
+  <img src="https://github.com/VietNgThanh/e_commerce_shop_app_ui/blob/master/resources/screenshots/side_menu.png?raw=true" width="250"/>
+  <img src="https://github.com/VietNgThanh/e_commerce_shop_app_ui/blob/master/resources/screenshots/home.png?raw=true" width="250"/>
+  <img src="https://github.com/VietNgThanh/e_commerce_shop_app_ui/blob/master/resources/screenshots/product_detail.png?raw=true" width="250"/>
+  <img src="https://github.com/VietNgThanh/e_commerce_shop_app_ui/blob/master/resources/screenshots/cart.png?raw=true" width="250"/>
+  <img src="https://github.com/VietNgThanh/e_commerce_shop_app_ui/blob/master/resources/screenshots/favorite.png?raw=true" width="250"/>
+  <img src="https://github.com/VietNgThanh/e_commerce_shop_app_ui/blob/master/resources/screenshots/order_history.png?raw=true" width="250"/>
+</p>
