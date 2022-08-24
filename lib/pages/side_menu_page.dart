@@ -39,7 +39,7 @@ class _SideMenuPageState extends State<SideMenuPage> {
             Container(
               height: 45,
               width: 45,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   image: NetworkImage(
@@ -49,13 +49,13 @@ class _SideMenuPageState extends State<SideMenuPage> {
               ),
             ),
             const SizedBox(height: 15),
-            Text(
+            const Text(
               'Hey,',
               style: TextStyle(
                 fontSize: 16,
               ),
             ),
-            Text(
+            const Text(
               'Viet',
               style: TextStyle(
                 fontSize: 22,
@@ -102,7 +102,7 @@ class _SideMenuPageState extends State<SideMenuPage> {
                   ),
                   title: Text(
                     sideMenuItems[index]['label'],
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       color: secondary,
                     ),
@@ -137,7 +137,7 @@ class _SideMenuPageState extends State<SideMenuPage> {
                 ),
                 title: Text(
                   sideMenuItems[index]['label'],
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16,
                     color: secondary,
                   ),
@@ -162,7 +162,7 @@ class _SideMenuPageState extends State<SideMenuPage> {
   Widget _getFooter() {
     return Column(
       children: [
-        Divider(),
+        const Divider(),
         FadeInLeft(
           duration: Duration(milliseconds: sideMenuItems.length * 100 + 200),
           child: Container(
@@ -176,7 +176,7 @@ class _SideMenuPageState extends State<SideMenuPage> {
                 LineIcons.alternateSignOut,
                 color: secondary,
               ),
-              title: Text(
+              title: const Text(
                 'Logout',
                 style: TextStyle(
                   fontSize: 16,

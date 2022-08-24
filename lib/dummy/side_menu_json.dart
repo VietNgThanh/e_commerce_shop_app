@@ -9,24 +9,24 @@ List sideMenuItems = [
     "label": "Home",
     "selected": true,
     "icon": LineIcons.home,
-    "page": HomePage()
+    "page": const HomePage()
   },
   {
     "label": "My Cart",
     "selected": false,
     "icon": LineIcons.shoppingCart,
-    "page": CartPage()
+    "page": const CartPage()
   },
   {
     "label": "Favourite",
     "selected": false,
     "icon": LineIcons.heart,
-    "page": FavouritePage()
+    "page": const FavouritePage()
   },
   {
     "label": "Orders",
     "selected": false,
     "icon": LineIcons.history,
-    "page": OrderHistoryPage()
+    "page": const OrderHistoryPage()
   },
 ];

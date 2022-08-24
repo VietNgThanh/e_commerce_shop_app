@@ -78,7 +78,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           Navigator.of(context).pop();
         },
       ),
-      title: Text(
+      title: const Text(
         'Product Detail',
         style: TextStyle(
           fontSize: 18,
@@ -99,7 +99,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
         children: [
           Text(
             widget.name,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.w500,
             ),
@@ -111,10 +111,10 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 LineIcons.star,
                 size: 20,
               ),
-              SizedBox(width: 5),
+              const SizedBox(width: 5),
               Text(
                 '${widget.rate} Reviews',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),
@@ -130,7 +130,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 crossAxisAlignment: CrossAxisAlignment.baseline,
                 textBaseline: TextBaseline.alphabetic,
                 children: [
-                  Text(
+                  const Text(
                     '\$',
                     style: TextStyle(
                       color: red,
@@ -140,7 +140,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                   Text(
                     widget.price,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: secondary,
                       fontSize: 25,
                       fontWeight: FontWeight.w500,
@@ -158,12 +158,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     BoxShadow(
                       color: secondary.withOpacity(.15),
                       blurRadius: 15,
-                      offset: Offset(0, 5),
+                      offset: const Offset(0, 5),
                     ),
                   ],
                 ),
-                child: Center(
-                  child: const Icon(
+                child: const Center(
+                  child: Icon(
                     LineIcons.heart,
                     size: 23,
                   ),
@@ -254,7 +254,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           const SizedBox(height: 20),
           Row(
             children: [
-              Text(
+              const Text(
                 'Sizes',
                 style: TextStyle(
                   fontSize: 18,
@@ -282,7 +282,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           child: Center(
                             child: Text(
                               sizes[index].toString(),
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -317,7 +317,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'More',
                 style: TextStyle(
                   fontSize: 18,
@@ -349,7 +349,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                             ),
                             child: const Icon(Icons.remove),
                           ),
-                          Text(
+                          const Text(
                             '1',
                             style: TextStyle(
                               fontSize: 16,
@@ -374,7 +374,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   Container(
                     height: 45,
                     width: 45,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: white,
                       shape: BoxShape.circle,
                     ),

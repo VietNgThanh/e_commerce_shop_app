@@ -54,7 +54,7 @@ class _CartPageState extends State<CartPage> {
             Navigator.of(context).pop();
           },
         ),
-        title: Text(
+        title: const Text(
           'Cart',
           style: TextStyle(
             fontSize: 18,
@@ -72,7 +72,7 @@ class _CartPageState extends State<CartPage> {
                 BoxShadow(
                   color: secondary.withOpacity(.15),
                   blurRadius: 5,
-                  offset: Offset(0, 5),
+                  offset: const Offset(0, 5),
                 ),
               ],
               color: white,
@@ -161,14 +161,14 @@ class _CartPageState extends State<CartPage> {
                           children: [
                             Text(
                               myCartJson[index]['name'],
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 16,
                               ),
                               maxLines: 2,
                             ),
                             Row(
                               children: [
-                                Text(
+                                const Text(
                                   '\$',
                                   style: TextStyle(
                                     color: red,
@@ -178,7 +178,7 @@ class _CartPageState extends State<CartPage> {
                                 ),
                                 Text(
                                   myCartJson[index]['price'],
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -209,13 +209,13 @@ class _CartPageState extends State<CartPage> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            const Icon(LineIcons.minusSquare),
+                          children: const [
+                            Icon(LineIcons.minusSquare),
                             Text(
                               '1',
                               style: TextStyle(fontSize: 14),
                             ),
-                            const Icon(LineIcons.plusSquare),
+                            Icon(LineIcons.plusSquare),
                           ],
                         )
                       ],
@@ -231,7 +231,6 @@ class _CartPageState extends State<CartPage> {
   }
 
   Widget _getPromotionCode() {
-    var size = MediaQuery.of(context).size;
     return Container(
       height: 55,
       width: double.infinity,
@@ -244,11 +243,11 @@ class _CartPageState extends State<CartPage> {
       ),
       child: Row(
         children: [
-          Expanded(
+          const Expanded(
             child: SizedBox(
               height: 55,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.symmetric(horizontal: 20),
                 child: TextField(
                   cursorColor: secondary,
                   decoration: InputDecoration(
@@ -268,7 +267,7 @@ class _CartPageState extends State<CartPage> {
                 borderRadius: BorderRadius.circular(12),
                 color: secondary,
               ),
-              child: Center(
+              child: const Center(
                 child: Text(
                   'Apply',
                   style: TextStyle(
@@ -289,7 +288,7 @@ class _CartPageState extends State<CartPage> {
       children: [
         Row(
           children: [
-            Text(
+            const Text(
               'Subtotal',
               style: TextStyle(
                 fontSize: 16,
@@ -300,7 +299,7 @@ class _CartPageState extends State<CartPage> {
             const SizedBox(width: 2),
             Text(
                 '(${myCartJson.length} ${myCartJson.length <= 1 ? 'item' : 'items'})'),
-            Expanded(
+            const Expanded(
               child: Align(
                 alignment: Alignment.centerRight,
                 child: Text(
@@ -318,7 +317,7 @@ class _CartPageState extends State<CartPage> {
         const SizedBox(height: 30),
         Row(
           children: [
-            Text(
+            const Text(
               'Delivery charge',
               style: TextStyle(
                 fontSize: 16,
@@ -329,7 +328,7 @@ class _CartPageState extends State<CartPage> {
             const SizedBox(width: 2),
             Text(
                 '(${myCartJson.length} ${myCartJson.length <= 1 ? 'item' : 'items'})'),
-            Expanded(
+            const Expanded(
               child: Align(
                 alignment: Alignment.centerRight,
                 child: Text(
@@ -347,7 +346,7 @@ class _CartPageState extends State<CartPage> {
         const SizedBox(height: 30),
         Row(
           children: [
-            Text(
+            const Text(
               'Total',
               style: TextStyle(
                 fontSize: 16,
@@ -358,7 +357,7 @@ class _CartPageState extends State<CartPage> {
             const SizedBox(width: 2),
             Text(
                 '(${myCartJson.length} ${myCartJson.length <= 1 ? 'item' : 'items'})'),
-            Expanded(
+            const Expanded(
               child: Align(
                 alignment: Alignment.centerRight,
                 child: Text(

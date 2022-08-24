@@ -56,7 +56,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
             Navigator.of(context).pop();
           },
         ),
-        title: Text(
+        title: const Text(
           'Order History',
           style: TextStyle(
             fontSize: 18,
@@ -74,7 +74,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                 BoxShadow(
                   color: secondary.withOpacity(.15),
                   blurRadius: 5,
-                  offset: Offset(0, 5),
+                  offset: const Offset(0, 5),
                 ),
               ],
               color: white,
@@ -141,7 +141,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                             )
                           ],
                         )
-                      : BoxDecoration(),
+                      : const BoxDecoration(),
                   child: Center(
                     child: Text(
                       'Current Orders',
@@ -179,7 +179,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                             )
                           ],
                         )
-                      : BoxDecoration(),
+                      : const BoxDecoration(),
                   child: Center(
                     child: Text(
                       'Past Orders',
@@ -224,12 +224,12 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                       children: [
                         Text(
                           currentOrderList[index]['date'],
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Delivery Processing',
                           style: TextStyle(
                             fontSize: 15,
@@ -284,14 +284,14 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                                   children: [
                                     Text(
                                       currentOrderList[index]['name'],
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontSize: 16,
                                       ),
                                       maxLines: 2,
                                     ),
                                     Row(
                                       children: [
-                                        Text(
+                                        const Text(
                                           '\$',
                                           style: TextStyle(
                                             fontSize: 16,
@@ -301,7 +301,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                                         ),
                                         Text(
                                           currentOrderList[index]['price'],
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.w600,
                                           ),
@@ -326,7 +326,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Total Items: 1',
                                       style: TextStyle(
                                         fontSize: 13,
@@ -381,12 +381,12 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                       children: [
                         Text(
                           pastOrderList[index]['date'],
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Delivered',
                           style: TextStyle(
                             fontSize: 15,
@@ -441,14 +441,14 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                                   children: [
                                     Text(
                                       pastOrderList[index]['name'],
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontSize: 16,
                                       ),
                                       maxLines: 2,
                                     ),
                                     Row(
                                       children: [
-                                        Text(
+                                        const Text(
                                           '\$',
                                           style: TextStyle(
                                             fontSize: 16,
@@ -458,7 +458,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                                         ),
                                         Text(
                                           pastOrderList[index]['price'],
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.w600,
                                           ),
@@ -483,7 +483,7 @@ class _OrderHistoryPageState extends State<OrderHistoryPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Total Items: 1',
                                       style: TextStyle(
                                         fontSize: 13,

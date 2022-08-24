@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        drawer: SideMenuPage(),
+        drawer: const SideMenuPage(),
         key: scaffoldKey,
         backgroundColor: primary,
         appBar: PreferredSize(
@@ -86,14 +86,14 @@ class _HomePageState extends State<HomePage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const SizedBox(height: 10),
-          Text(
+          const Text(
             'Hello Viet,',
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.w500,
             ),
           ),
-          Text(
+          const Text(
             'Let\' get something',
             style: TextStyle(
               fontSize: 15,
@@ -116,9 +116,9 @@ class _HomePageState extends State<HomePage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           'Category',
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w500,
           ),
@@ -178,12 +178,12 @@ class _HomePageState extends State<HomePage> {
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(
+                  children: const [
+                    Icon(
                       AntDesign.search1,
                       size: 18,
                     ),
-                    const SizedBox(width: 5),
+                    SizedBox(width: 5),
                     Text(
                       'Search...',
                       style: TextStyle(
@@ -256,7 +256,7 @@ class _HomePageState extends State<HomePage> {
                                     const SizedBox(width: 5),
                                     Text(
                                       homeJson[index]['rate'],
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
@@ -272,12 +272,12 @@ class _HomePageState extends State<HomePage> {
                                       BoxShadow(
                                         color: secondary.withOpacity(.15),
                                         blurRadius: 15,
-                                        offset: Offset(0, 5),
+                                        offset: const Offset(0, 5),
                                       ),
                                     ],
                                   ),
-                                  child: Center(
-                                    child: const Icon(
+                                  child: const Center(
+                                    child: Icon(
                                       LineIcons.shoppingBag,
                                       size: 18,
                                     ),
@@ -290,7 +290,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Positioned(
                         top: 5,
-                        child: Container(
+                        child: SizedBox(
                           width: (size.width - 50) / 2,
                           height: 180,
                           child: Image.asset(
@@ -312,7 +312,7 @@ class _HomePageState extends State<HomePage> {
                   width: (size.width - 60) / 2,
                   child: Text(
                     homeJson[index]['name'],
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.w500,
                     ),
@@ -323,7 +323,7 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         '\$',
                         style: TextStyle(
                           fontSize: 20,

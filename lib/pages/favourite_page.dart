@@ -54,7 +54,7 @@ class _FavouritePageState extends State<FavouritePage> {
             Navigator.of(context).pop();
           },
         ),
-        title: Text(
+        title: const Text(
           'Favourite',
           style: TextStyle(
             fontSize: 18,
@@ -72,7 +72,7 @@ class _FavouritePageState extends State<FavouritePage> {
                 BoxShadow(
                   color: secondary.withOpacity(.15),
                   blurRadius: 5,
-                  offset: Offset(0, 5),
+                  offset: const Offset(0, 5),
                 ),
               ],
               color: white,
@@ -137,7 +137,7 @@ class _FavouritePageState extends State<FavouritePage> {
                                       const SizedBox(width: 5),
                                       Text(
                                         homeJson[index]['rate'],
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                           fontWeight: FontWeight.w500,
                                         ),
                                       ),
@@ -153,12 +153,12 @@ class _FavouritePageState extends State<FavouritePage> {
                                         BoxShadow(
                                           color: secondary.withOpacity(.15),
                                           blurRadius: 15,
-                                          offset: Offset(0, 5),
+                                          offset: const Offset(0, 5),
                                         ),
                                       ],
                                     ),
-                                    child: Center(
-                                      child: const Icon(
+                                    child: const Center(
+                                      child: Icon(
                                         LineIcons.heartAlt,
                                         size: 18,
                                         color: red,
@@ -190,7 +190,7 @@ class _FavouritePageState extends State<FavouritePage> {
                       width: (size.width - 60) / 2,
                       child: Text(
                         homeJson[index]['name'],
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 17,
                           fontWeight: FontWeight.w500,
                         ),
@@ -201,7 +201,7 @@ class _FavouritePageState extends State<FavouritePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             '\$',
                             style: TextStyle(
                               fontSize: 20,
